@@ -2,6 +2,8 @@
 import AOS from "aos";
 import 'aos/dist/aos.css';
 
+import { ContactForm } from "../component/ContactForm";
+
 import MailOutline from '@mui/icons-material/MailOutline';
 import Phone from '@mui/icons-material/Phone';
 import LocationOn from '@mui/icons-material/LocationOn';
@@ -11,7 +13,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const ContactUs = () => {
     return (
-        <div>
+        <div className="mt-16">
             <h1 className='flex justify-center text-3xl md:text-4xl my-4 text-yellow-600'
             data-aos='zoom-in-up'>ContactUs</h1>
             <iframe className="w-full h-72 my-8"
@@ -21,7 +23,7 @@ const ContactUs = () => {
                 <div className="mb-4 md:mb-0"
                 data-aos='fade-right'>
                     <h1 className="text-lg text-yellow-600 md:text-xl font-bold">mairaj event planner</h1>
-                    <ul className="list-none mt-2">
+                    <ul className="list-none mt-2 ">
                         <li><LocationOn fontSize='small' />  North Nazimabad, Karachi, Pakistan</li>
                         <li><MailOutline fontSize='small' />  mairaj.event.planner</li>
                         <li><Phone fontSize='small' />  +923333173879</li>
@@ -48,72 +50,7 @@ const ContactUs = () => {
                     </ul>
                 </div>
             </div>
-            <div className="max-w-md mx-auto mt-8 mb-6 p-6 bg-gray-100 rounded-md shadow-xl"
-            data-aos='zoom-in'>
-      <h2 className="flex justify-center text-2xl font-bold mb-4">Contact Us</h2>
-      <form>
-        <div className="mb-4" data-aos='zoom-in'>
-          <label htmlFor="name" className="block text-gray-600 text-sm font-semibold mb-2">
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-            placeholder="Your Name"
-            required
-          />
-        </div>
-        <div className="mb-4" data-aos='zoom-in'>
-          <label htmlFor="email" className="block text-gray-600 text-sm font-semibold mb-2">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-            placeholder="Your Email"
-            required
-          />
-        </div>
-        <div className="mb-4" data-aos='zoom-in'>
-          <label htmlFor="mobile" className="block text-gray-600 text-sm font-semibold mb-2">
-            Mobile Number
-          </label>
-          <input
-            type="tel"
-            id="mobile"
-            name="mobile"
-            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-            placeholder="Your Mobile Number"
-            required
-          />
-        </div>
-        <div className="mb-4" data-aos='zoom-in'>
-          <label htmlFor="message" className="block text-gray-600 text-sm font-semibold mb-2">
-            Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-            placeholder="Your Message"
-            required
-          ></textarea>
-        </div>
-        <div className='flex justify-center' data-aos='zoom-in'>
-        <button
-          type="submit"
-          className="w-32 bg-yellow-600 text-white py-2 rounded-xl hover:bg-yellow-500 focus:outline-none focus:ring focus:border-blue-300"
-        >
-          Submit
-        </button>
-        </div>
-      </form>
-    </div>
+            <ContactForm />
         </div>
     )
 }

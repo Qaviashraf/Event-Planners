@@ -26,7 +26,7 @@ const Landing = () => {
         <div className=' leading-10 tracking-wider mb-8 p-4 md:p-20 text-center md:text-left md:mr-8'>
           <h1 
           data-aos="fade-right"
-          className='text-3xl md:text-5xl text-yellow-600'>Welcome to<br/> Mairaj Event Planner,</h1>
+          className='text-3xl md:text-5xl mt-10 text-yellow-600'>Welcome to<br/> Mairaj Event Planner,</h1>
           <h1 
           data-aos="fade-left"
           className='mt-6 text-xl md:text-3xl text-yellow-500 '>where dreams come to life and moments become memories.</h1> 
